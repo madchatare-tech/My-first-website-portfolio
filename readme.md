@@ -7,8 +7,6 @@ The goal of this project is **learning by building**, keeping everything clean, 
 
 ---
 
-## 🌐 Live Demo
-👉 https://madchatare-tech.github.io/My-first-website-portfolio/
 
 ---
 
