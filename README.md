@@ -29,6 +29,9 @@ The goal of this project is **learning by building**, keeping everything clean, 
 
 ---
 
+## 📂 Project Structure
+
+
 ---
 
 ## 🎯 Purpose of This Project
@@ -62,5 +65,3 @@ I’m always open to learning and improving.
 
 ## 📄 License
 This project is open-source and free to use for learning purposes.
-
-## 📂 Project Structure
