@@ -1,14 +1,115 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hi, I'm Learning to Build with AI</h1>
-      <p>From zero to real apps.</p>
-      <button>Coming Soon</button>
-    </div>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My first website — portfolio</title>
+
+  <!-- Optional: lightweight web font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/">My-first-website</a>
+        <nav class="nav">
+          <a href="#learning">What I'm Learning</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero container" id="about">
+        <div class="hero-content">
+          <h1>My first website — portfolio</h1>
+          <p class="lede">
+            A simple learning project built with HTML &amp; CSS. I'm using AI tools to experiment and learn front-end design, accessibility and responsive layout.
+          </p>
+
+          <p class="quick">
+            <strong>Goal:</strong> keep it clean, learn consistently, and build small, shareable projects.
+          </p>
+
+          <a class="cta" href="#learning">See what I'm learning →</a>
+        </div>
+
+        <!-- Minimal avatar / illustration (inline SVG) -->
+        <div class="hero-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="120" height="120" rx="16" fill="#F7F7FA"/>
+            <g transform="translate(16,16)" fill="none" stroke="#BFC8D6" stroke-width="3" stroke-linecap="round">
+              <circle cx="44" cy="28" r="18" fill="#E9EEF7" stroke="none"/>
+              <path d="M0 84c12-16 44-20 44-20s32 4 44 20" fill="#E9EEF7" stroke="none"/>
+              <circle cx="44" cy="28" r="18" stroke="#9AA8C0" fill="none"/>
+              <path d="M0 84c12-16 44-20 44-20s32 4 44 20" stroke="#9AA8C0" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- WHAT I'M LEARNING -->
+      <section class="learning container" id="learning">
+        <h2>What I'm learning</h2>
+        <p class="muted">Short list of current focus areas and micro-goals.</p>
+
+        <ul class="skills">
+          <li>
+            <div class="skill-title">
+              <span>HTML &amp; semantic markup</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+              <div class="progress-fill" style="width:75%"></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="skill-title">
+              <span>Responsive CSS (Flex & Grid)</span>
+              <span class="skill-level">Learning</span>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
+              <div class="progress-fill" style="width:55%"></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="skill-title">
+              <span>Design & Typography</span>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+              <div class="progress-fill" style="width:40%"></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="skill-title">
+              <span>Publishing (GitHub Pages)</span>
+              <span class="skill-level">Started</span>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30">
+              <div class="progress-fill" style="width:30%"></div>
+            </div>
+          </li>
+        </ul>
+
+        <p class="note">Tip: make a tiny project for each skill — a single focused page teaches more than a long tutorial.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Made for learning • Minimal portfolio template • No JavaScript</small>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
