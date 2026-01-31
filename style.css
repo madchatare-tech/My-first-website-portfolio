@@ -1,59 +1,24 @@
-/* style.css — Shared stylesheet for all pages */
-
-
-:root{
---max-width: 980px;
---accent: #2563eb; /* blue */
---muted: #6b7280;
---bg: #ffffff;
---surface: #f8fafc;
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-margin:0;
-font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-line-height:1.5;
-color:#111827;
-background:var(--surface);
-}
-.container{
-max-width:var(--max-width);
-margin:0 auto;
-padding:1.25rem;
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
 }
 
-
-/* Header / Nav */
-.site-header{
-background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
-border-bottom:1px solid #e6eef8;
+textarea {
+  height: 120px;
 }
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:1.125rem;margin:0;color:var(--accent)}
-.top-nav{display:flex;gap:0.5rem}
-.top-nav .nav-link{
-display:inline-block;padding:0.5rem 0.65rem;border-radius:6px;text-decoration:none;color:var(--muted);font-weight:600;font-size:0.95rem
+
+button {
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-.top-nav .nav-link:hover{background:#eef2ff;color:var(--accent)}
-.top-nav .nav-link.active{background:var(--accent);color:white}
-
-
-/* Hero */
-.hero{padding:2rem 0}
-.hero h2{margin:0 0 0.25rem;font-size:1.5rem}
-.lead{color:var(--muted);margin-top:0}
-
-
-/* Sections */
-section{margin-top:1.5rem}
-.what-i-learn ul.learning-list{padding-left:1.2rem}
-
-
-/* Projects preview */
-.projects-preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
-.proj-card{background:white;border-radius:8px;padding:0.75rem;border:1px solid #eef2ff}
-.proj-thumb{height:90px;background:linear-gradient(135deg,#eef2ff,#f0f9ff);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
-.text-muted{color:var(--muted)}
